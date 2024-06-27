@@ -4,13 +4,18 @@ function createGrid(rows, columns, parent) {
     grid.style.gridTemplateRows = `repeat(${rows}, 1fr)`;
     grid.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
     grid.style.width = '100vw';
-    grid.style.height = '100vh'; 
+    grid.style.height = '100vh';
     grid.style.boxSizing = 'border-box';
 
     for (let i = 0; i < rows * columns; i++) {
         const cell = document.createElement('div');
         cell.style.border = '1px solid black';
         cell.style.boxSizing = 'border-box';
+        
+        cell.addEventListener('mouseenter', function() {
+            this.style.backgroundColor = 'yellow'; 
+        });
+
         grid.appendChild(cell);
     }
 
