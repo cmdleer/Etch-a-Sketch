@@ -2,7 +2,9 @@ const button = document.createElement("button");
 button.style.width = '10vw'
 button.style.height=  '10vw'
 button.textContent = "Reset"
-
+button.style.margin = '0 auto';
+button.style.display = 'flex';
+button.style.justifyContent = 'center';
 
 function createGrid(rows, columns, parent) {
     const grid = document.createElement('div');
