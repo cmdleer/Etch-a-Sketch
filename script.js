@@ -5,7 +5,7 @@ button.textContent = "Reset"
 button.style.margin = '0 auto';
 button.style.display = 'flex';
 button.style.justifyContent = 'center';
-
+button.style.margin = '10px'
 function createGrid(rows, columns, parent) {
     const grid = document.createElement('div');
     grid.style.display = 'grid';
