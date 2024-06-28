@@ -1,5 +1,6 @@
 const button = document.createElement("button");
-
+button.style.width = '10vw'
+button.style.height=  '10vw'
 
 
 function createGrid(rows, columns, parent) {
