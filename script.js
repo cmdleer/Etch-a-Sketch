@@ -1,3 +1,7 @@
+const button = document.createElement("button");
+
+
+
 function createGrid(rows, columns, parent) {
     const grid = document.createElement('div');
     grid.style.display = 'grid';
@@ -18,7 +22,7 @@ function createGrid(rows, columns, parent) {
 
         grid.appendChild(cell);
     }
-
+    parent.appendChild(button);
     parent.appendChild(grid);
 }
 
