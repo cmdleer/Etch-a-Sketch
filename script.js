@@ -1,6 +1,7 @@
 const button = document.createElement("button");
 button.style.width = '10vw'
 button.style.height=  '10vw'
+button.textContent = "Reset"
 
 
 function createGrid(rows, columns, parent) {
