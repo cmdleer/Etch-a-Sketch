@@ -11,8 +11,11 @@ button.style.display = 'flex';
 button.style.justifyContent = 'center';
 button.style.margin = '10px'
 
-function displayMessageBox(message) {
-    alert(message);
+function displayMessageBox(message, callback) {
+    var userInput = prompt(message);
+    if (userInput !== null) {
+        callback(userInput);
+    }
 }
 function createGrid(rows, columns, parent) {
     const grid = document.createElement('div');
