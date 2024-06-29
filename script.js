@@ -40,9 +40,9 @@ function createGrid(rows, columns, parent) {
     parent.appendChild(button);
     parent.appendChild(grid);
 }
-
-
-button.addEventListener("click", )
+button.addEventListener("click", () => {
+    displayMessageBox();
+})
 button.addEventListener("click", () => {
     createGrid(1, 1, document.body);
 });
