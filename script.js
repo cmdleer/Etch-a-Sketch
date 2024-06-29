@@ -11,6 +11,9 @@ button.style.display = 'flex';
 button.style.justifyContent = 'center';
 button.style.margin = '10px'
 
+function displayMessageBox(message) {
+    alert(message);
+}
 function createGrid(rows, columns, parent) {
     const grid = document.createElement('div');
     grid.style.display = 'grid';
@@ -35,6 +38,8 @@ function createGrid(rows, columns, parent) {
     parent.appendChild(grid);
 }
 
+
+button.addEventListener("click", )
 button.addEventListener("click", () => {
     createGrid(1, 1, document.body);
 });
