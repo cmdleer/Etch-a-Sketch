@@ -1,3 +1,7 @@
+document.body.style.margin = '0';
+document.body.style.padding = '0';
+document.body.style.height = '100vh';
+
 const button = document.createElement("button");
 button.style.width = '10vw'
 button.style.height=  '10vw'
@@ -6,6 +10,7 @@ button.style.margin = '0 auto';
 button.style.display = 'flex';
 button.style.justifyContent = 'center';
 button.style.margin = '10px'
+
 function createGrid(rows, columns, parent) {
     const grid = document.createElement('div');
     grid.style.display = 'grid';
@@ -30,8 +35,6 @@ function createGrid(rows, columns, parent) {
     parent.appendChild(grid);
 }
 
-document.body.style.margin = '0';
-document.body.style.padding = '0';
-document.body.style.height = '100vh';
-
-createGrid(16, 16, document.body);
+button.addEventListener("click", () => {
+    createGrid(1, 1, document.body);
+});
