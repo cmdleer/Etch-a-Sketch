@@ -1,13 +1,19 @@
-const container = document.createElement('div');
-const button = document.createElement('button');
+const buttonContainer = document.createElement('div');
+const gridContainer = document.createElement('div');
+const buildButton = document.createElement('button');
+
 function buildGrid(size){
     container.innerHTML = ``;
     for (i = 0; i < columns; i++) {
         document.createElement('div');
-        container.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
-        container.style.gridTemplateRows = `repeat(${size}, 1fr)`;
+        gridContainer.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
+        gridContainer.style.gridTemplateRows = `repeat(${size}, 1fr)`;
     }
 }
+
+document.body.appendChild(buildButton);
+buttonContainer.appendChild(buildButton)
+
 
 buildGrid(16);
 
