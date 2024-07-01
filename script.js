@@ -12,7 +12,8 @@ function buildGrid(size){
 }
 
 document.body.appendChild(buildButton);
-buttonContainer.appendChild(buildButton)
+buttonContainer.appendChild(buildButton);
+document.body.appendChild(gridContainer);
 
 
 buildGrid(16);
