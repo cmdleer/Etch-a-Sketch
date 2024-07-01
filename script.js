@@ -1,5 +1,5 @@
-const container = document.createElement('div')
-
+const container = document.createElement('div');
+const button = document.createElement('button');
 function buildGrid(size){
     container.innerHTML = ``;
     for (i = 0; i < columns; i++) {
