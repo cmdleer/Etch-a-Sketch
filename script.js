@@ -9,6 +9,12 @@ function buildGrid(size){
     }
 }
 
-buildGrid()
+buildGrid(16);
+
+container.addEventListener('mouseover', function(event){
+    if (event.target.classList.contains('grid-square')){
+        event.target.style.backgroundColor = 'green';
+    }
+})
 
 
